@@ -1,7 +1,7 @@
 {
-    "name": "symfony/workflow",
+    "name": "hissezhaut/workflow",
     "type": "library",
-    "description": "Symfony Workflow Component",
+    "description": "Symfony Workflow Component fork by hissez haut",
     "keywords": ["workflow", "petrinet", "place", "transition"],
     "homepage": "http://symfony.com",
     "license": "MIT",
@@ -17,10 +17,19 @@
         {
             "name": "Symfony Community",
             "homepage": "http://symfony.com/contributors"
+        },
+        {
+            "name": "Hissez Haut",
+            "homepage": "http://www.hissez-haut.com/"
         }
     ],
     "require": {
-        "php": ">=5.5.9"
+        "php": ">=5.5.9",
+		"symfony/stopwatch": "^3.1",
+		"symfony/event-dispatcher": "^3.1",
+		"monolog/monolog": "^1.19",
+		"symfony/property-access": "^3.1",
+		"symfony/var-dumper": "^3.1"
     },
     "require-dev": {
         "psr/log": "~1.0",
