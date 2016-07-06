@@ -60,7 +60,7 @@ class Workflow
         $marking = $this->markingStore->getMarking($subject);
 
         if (!$marking instanceof Marking) {
-            throw new LogicException(sprintf('The value returned by the MarkingStore is not an instance of "%s" for workflow "%s".', Marking::class, $this->name));
+            throw new LogicException(sprintf('The value returned by the MarkingStore is not an instance of "%s" for workflow "%s".', get_class( new Marking ), $this->name));
         }
 
         // check if the subject is already in the workflow
